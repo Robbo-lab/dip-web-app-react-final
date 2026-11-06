@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router";
 
 import Accordion from "./components/Accordian.js";
 import Gallery from "./components/Gallery.js";
@@ -30,8 +30,6 @@ import { usersLoader, userLoader } from "./loaders/userLoaders.js";
 import "bulma/css/bulma.min.css";
 import "./App.css";
 
-const APP_BASENAME = "/"; // Use "/dip-web-app-react-final for the existing GitHub Pages subpath.
-
 // Dont do this
 function DateInputPage() {
   const [date, setDate] = useState("");
@@ -44,13 +42,13 @@ function DateInputPage() {
   );
 }
 
-// // Hash URLs allow direct links and refreshes on static GitHub Pages hosting.
-// const createRouter =
-//   process.env.NODE_ENV === "production"
-//     ? createHashRouter
-//     : createBrowserRouter;
+// Hash URLs allow direct links and refreshes on static GitHub Pages hosting.
+const createRouter =
+  process.env.NODE_ENV === "production"
+    ? createHashRouter
+    : createBrowserRouter;
 
-const router = createBrowserRouter(
+const router = createRouter(
   [
     {
       element: <MainLayout />,
@@ -80,7 +78,6 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: APP_BASENAME },
 );
 
 export default function App() {
