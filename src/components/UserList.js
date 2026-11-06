@@ -32,7 +32,7 @@ export default function UserList() {
           </li>
         ))}
       </ul>
-      <p className="help is-size-7 mt-3">Route loaders and URL filters.</p>
+      <p className="help is-size-7 mt-3">Data loaders and URL filters.</p>
     </>
   );
 }
