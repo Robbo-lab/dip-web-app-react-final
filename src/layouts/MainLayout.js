@@ -58,13 +58,13 @@ export default function MainLayout() {
               </div>
             ))}
           </nav>
-          {/* {navigation.state !== "idle" && (
+          {navigation.state !== "idle" && (
             <p className="notification is-info mt-3" role="status">
               {navigation.state === "submitting"
                 ? "Submitting…"
                 : "Loading route…"}
             </p>
-          )} */}
+          )}
           <div className="columns is-centered mt-5">
             <div className="column is-half">
               <section
