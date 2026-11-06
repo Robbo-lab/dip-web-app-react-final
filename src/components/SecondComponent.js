@@ -5,9 +5,11 @@ import ThirdComponent from "./ThirdComponent";
 const SecondComponent = () => {
   return (
     <div>
-      <h2>Second Component User is NOT DEFINED </h2>
+      <h2 className="is-size-5 has-text-weight-semibold mb-3">Second Component User is NOT DEFINED </h2>
       {/* <ThirdComponent userName={userName} /> */}
-      <ThirdComponent />
+      <div className="notification is-link is-light ml-3 mb-0">
+        <ThirdComponent />
+      </div>
     </div>
   );
 };

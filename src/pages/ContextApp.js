@@ -8,11 +8,15 @@ const ContextApp = () => {
 
   return (
     <UserContext.Provider value={userName}>
-      <div>
-        <h1>Using Context API</h1>
-        <SecondComponent />
-        <FourthComponent />
-        <p className="help is-size-7 mt-3">
+      <div className="has-text-left">
+        <h1 className="title is-4 mb-5">Using Context API</h1>
+        <div className="box mb-4">
+          <SecondComponent />
+        </div>
+        <div className="box mb-4">
+          <FourthComponent />
+        </div>
+        <p className="help is-size-7 mt-3 has-text-centered">
           Context shares user state: Second nests Third; Third and Fourth read
           it with useContext and re-render when it changes.
         </p>
