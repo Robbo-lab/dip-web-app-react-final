@@ -27,6 +27,7 @@ function UserProfile(props) {
     age,
     isStudent,
     skills,
+    changeAge,
   ]);
 
   // Step 5 fix the ternary operator
