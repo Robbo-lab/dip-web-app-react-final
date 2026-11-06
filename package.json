@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "John Robertson",
   "license": "ISC",
-  "homepage": "https://robbo-lab.github.io/dip-web-app-react-app-final/",
+  "homepage": "https://robbo-lab.github.io/dip-web-app-react-final/",
   "dependencies": {
     "bulma": "^1.0.4",
     "react": "19.2",

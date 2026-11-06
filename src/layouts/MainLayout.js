@@ -48,9 +48,16 @@ export default function MainLayout() {
                 : "Loading route…"}
             </p>
           )}
-          <section className="section box has-background-scheme-main has-text-text mt-5 component-section" aria-label="React example">
-            <Outlet />
-          </section>
+          <div className="columns is-centered mt-5">
+            <div className="column is-half">
+              <section
+                className="box has-background-scheme-main has-text-text component-section"
+                aria-label="React example"
+              >
+                <Outlet />
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </section>
